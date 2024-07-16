@@ -46,3 +46,23 @@ class Solution:
                 return [num_to_index[compliment], i]
             num_to_index[num] = i
 ```
+
+## Explanation
+We can introduce one variable called `compliment` which is the difference between the target and the input number, and a set/hash-map `num_to_index` which can store the compliment and the index value of the corresponding input number. 
+
+```
+Input: 
+nums = [3,4,5,6], target = 7
+
+Output: [0,1]
+```
+
+1. Input number = 3
+- Compliment = target - input_number = 7 - 3 = 4
+- Compliment not in num_to_index
+- num_to_index = {3 : 0}
+
+2. Input number = 4
+- Compliment = target - input_number = 7 - 4 = 3
+- Compliment in num_to_index
+- return `[0,1]`

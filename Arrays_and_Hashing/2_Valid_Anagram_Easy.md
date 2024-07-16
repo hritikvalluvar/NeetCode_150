@@ -28,3 +28,6 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         return ''.join(sorted(s)) == ''.join(sorted(t))
 ```
+
+## Explanation
+An anagram contains the same set of letters in both words. To check if two words are anagrams, both words can be sorted in ascending manner and can be checked if they are equal or not.
