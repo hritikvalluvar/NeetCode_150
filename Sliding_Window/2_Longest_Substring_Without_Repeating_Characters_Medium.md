@@ -21,8 +21,8 @@ Output: 1
 - `0 <= s.length <= 1000`
 - `s may consist of printable ASCII characters.`
 
-## Solution
-```
+## Solution 1(strings)
+```python
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if not s:
@@ -41,6 +41,53 @@ class Solution:
                 l += 1
                 sub = sub[l:r+1]
             longest = max(longest, len(sub))
+        
+        return longest
+```
+
+## Solution 2(sets)
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if not s:
+            return 0
+
+        l, r = 0, 0
+
+        sub = set()
+        longest = 1
+
+        while r < len(s):
+            if s[r] not in sub:
+                sub.add(s[r])
+                r += 1
+            else:
+                sub.remove(s[l])
+                l += 1
+            longest = max(longest, r - l)
+        
+        return longest
+```
+
+## Solution 3(sets with optimized loops)
+```python
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if not s:
+            return 0
+
+        l, r = 0, 0
+
+        sub = set()
+        longest = 1
+
+        while r < len(s):
+            while s[r] in sub:
+                sub.remove(s[l])
+                l += 1
+            sub.add(s[r])
+            r += 1
+            longest = max(longest, r - l)
         
         return longest
 ```
