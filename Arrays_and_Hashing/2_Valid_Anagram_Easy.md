@@ -21,13 +21,24 @@ Constraints:
 
 `s` and `t` consist of lowercase English letters.
 
-## Solution
+## Solution 1(Strings)
 
 ```python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         return ''.join(sorted(s)) == ''.join(sorted(t))
 ```
-
-## Explanation
+## Explanation 1
 An anagram contains the same set of letters in both words. To check if two words are anagrams, both words can be sorted in ascending manner and can be checked if they are equal or not.
+
+## Solution 2(hashmap/dictionary) Optimised!
+```python
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        smap = {char: s.count(char) for char in set(s)}
+        tmap = {char: t.count(char) for char in set(t)}
+
+        return smap == tmap
+```
+## Explanation 2
+A hashmap can be created for both `s` and `t` string can be compared.
