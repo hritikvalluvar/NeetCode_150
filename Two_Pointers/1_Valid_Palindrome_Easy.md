@@ -30,12 +30,7 @@ import re
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         s = re.sub(r'[^a-zA-Z0-9]', '', s).strip().lower()
-        n = len(s)
-
-        for i in range(0, n//2):
-            if s[i] != s[n-1-i]:
-                return False
-        return True
+        return s == s[::-1]
 ```
 
 ## Explanation
