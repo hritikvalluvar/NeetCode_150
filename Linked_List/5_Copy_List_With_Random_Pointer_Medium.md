@@ -1,13 +1,13 @@
 # Copy List With Random Pointer
-You are given the head of a linked list of length n. Unlike a singly linked list, each node contains an additional pointer random, which may point to any node in the list, or null.
+You are given the head of a linked list of length `n`. Unlike a singly linked list, each node contains an additional pointer `random`, which may point to any node in the list, or `null`.
 
-Create a deep copy of the list.
+Create a **deep copy** of the list.
 
-The deep copy should consist of exactly n new nodes, each including:
+The deep copy should consist of exactly `n` **new** nodes, each including:
 
-- The original value val of the copied node
-- A next pointer to the new node corresponding to the next pointer of the original node
-- A random pointer to the new node corresponding to the random pointer of the original node
+- The original value `val` of the copied node
+- A `next` pointer to the new node corresponding to the `next` pointer of the original node
+- A `random` pointer to the new node corresponding to the `random` pointer of the original node
 
 Note: None of the pointers in the new list should point to nodes in the original list.
 
@@ -18,6 +18,7 @@ In the examples, the linked list is represented as a list of `n` nodes. Each nod
 ### Example 1:
 
 ![example 1](/Linked_List/Images/public.png)
+
 ```python
 Input: head = [[3,null],[7,3],[4,0],[5,1]]
 
@@ -27,6 +28,7 @@ Output: [[3,null],[7,3],[4,0],[5,1]]
 ### Example 2:
 
 ![example 2](/Linked_List/Images/public-2.png)
+
 ```python
 Input: head = [[1,null],[2,2],[3,2]]
 
@@ -39,7 +41,7 @@ Output: [[1,null],[2,2],[3,2]]
 - `random` is `null` or is pointing to some node in the linked list.
 
 ## Solution
-
+```python
 """
 # Definition for a Node.
 class Node:
@@ -51,17 +53,18 @@ class Node:
 
 class Solution:
     def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
-        oldToCopy = {None: None}
+        oldToCopy = {None:None}
+        curr = head
+        while curr: # First pass: create a copy of nodes
+            oldToCopy[curr] = Node(curr.val)
+            curr = curr.next
 
-        cur = head
-        while cur:
-            copy = Node(cur.val)
-            oldToCopy[cur] = copy
-            cur = cur.next
-        cur = head
-        while cur:
-            copy = oldToCopy[cur]
-            copy.next = oldToCopy[cur.next]
-            copy.random = oldToCopy[cur.random]
-            cur = cur.next
+        curr = head
+        while curr: # Second pass: establish relationships(next, random)
+            copy = oldToCopy[curr]
+            copy.next = oldToCopy[curr.next]
+            copy.random = oldToCopy[curr.random]
+            curr = curr.next
+
         return oldToCopy[head]
+```
