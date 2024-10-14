@@ -5,6 +5,8 @@ Return the maximum area of water that can be trapped between the bars.
 
 ### Example 1:
 
+![example 1](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/0c25cb81-1095-4382-fff2-6ef77c1fd100/public)
+
 ```
 Input: height = [0,2,0,3,1,0,1,3,2,1]
 
