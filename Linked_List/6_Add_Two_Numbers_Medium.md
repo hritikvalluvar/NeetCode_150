@@ -9,7 +9,7 @@ Return the sum of the two numbers as a linked list.
 
 ### Example 1:
  
-![Images](/Linked_List/Images/public-5.avif)
+![example 1](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/fee72e19-6a21-45a5-365e-3cb45aba9700/public)
 
 ```python
 Input: l1 = [1,2,3], l2 = [4,5,6]
