@@ -8,7 +8,7 @@ Internally, `index` determines the index of the beginning of the cycle, if it ex
 **Note**: index is not given to you as a parameter.
 
 ### Example 1:
-![example_1](/Linked_List/Images/public-3.avif)
+![example_1](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/3ecdbcfc-70fc-429a-4654-cf4f6a7dbe00/public)
 
 ```python
 Input: head = [1,2,3,4], index = 1
@@ -19,7 +19,7 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 
 ### Example 2:
 
-![example_2](/Linked_List/Images/public-4.avif)
+![example_2](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/89e6716c-9f65-46da-d7b2-f04a93269700/public)
 
 ```python
 Input: head = [1,2], index = -1
