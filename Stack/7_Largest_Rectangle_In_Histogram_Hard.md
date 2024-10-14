@@ -4,7 +4,7 @@ You are given an array of integers `heights` where `heights[i]` represents the h
 Return the area of the largest rectangle that can be formed among the bars.
 
 ### Example 1:
-![example 1](/Stack/Images/histogram.jpg)
+![example 1](https://assets.leetcode.com/uploads/2021/01/04/histogram.jpg)
 ```python
 Input: heights = [2,1,5,6,2,3]
 Output: 10
