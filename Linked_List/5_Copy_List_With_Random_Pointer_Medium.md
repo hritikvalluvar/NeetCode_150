@@ -17,7 +17,7 @@ In the examples, the linked list is represented as a list of `n` nodes. Each nod
 
 ### Example 1:
 
-![example 1](/Linked_List/Images/public.png)
+![example 1](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/5a5c2bdd-51e2-4795-4544-096af4b6cc00/public)
 
 ```python
 Input: head = [[3,null],[7,3],[4,0],[5,1]]
@@ -27,7 +27,7 @@ Output: [[3,null],[7,3],[4,0],[5,1]]
 
 ### Example 2:
 
-![example 2](/Linked_List/Images/public-2.png)
+![example 2](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/6e56fa98-cf1e-4ca6-18d4-716dac4ba900/public)
 
 ```python
 Input: head = [[1,null],[2,2],[3,2]]
