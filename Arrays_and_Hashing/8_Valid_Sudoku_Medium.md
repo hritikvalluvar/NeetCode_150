@@ -10,6 +10,9 @@ Return `true` if the Sudoku board is valid, otherwise return `false`
 Note: A board does not need to be full or be solvable to be valid.
 
 ### Example 1:
+
+![example 1](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/0be40c5d-2d18-42b8-261b-13ca50de4100/public)
+
 ```python
 Input: board = 
 [["1","2",".",".","3",".",".",".","."],
