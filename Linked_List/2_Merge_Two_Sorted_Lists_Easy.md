@@ -7,7 +7,7 @@ The new list should be made up of nodes from `list1` and `list2`.
 
 ### Example 1:
 
-![Image](/Linked_List/Images/2_Merge_Two_Sorted_Lists_Easy.avif)
+![example 1](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/51adfea9-493a-4abb-ece7-fbb359d1c800/public)
 
 ```python
 Input: list1 = [1,2,4], list2 = [1,3,5]
