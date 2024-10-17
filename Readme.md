@@ -65,6 +65,7 @@ The problems are divided into categories, each containing individual markdown fi
 |                    | Count Good Nodes in Binary Tree                       | Medium      |
 |                    | Validate Binary Search Tree                           | Medium      |
 |                    | Kth Smallest Element in a BST                         | Medium      |
+|                    | Construct Binary Tree From Preorder And Inorder Traversal | Medium      |
 
 
 
